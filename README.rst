@@ -77,12 +77,9 @@ installation:
 
 Predict strain profiles
 -----------------------
-
-.. note::
-
-    This tutorial requires sickle (https://github.com/najoshi/sickle), Bowtie2
-    (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) and samtools
-    (http://samtools.sourceforge.net/) to be installed in your system.
+This tutorial requires sickle (https://github.com/najoshi/sickle), Bowtie2
+(http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) and samtools
+(http://samtools.sourceforge.net/) to be installed in your system.
 
 Download the example data (Illumina paired-end reads):
 
@@ -91,7 +88,7 @@ Download the example data (Illumina paired-end reads):
     wget ftp://ftp.fmach.it/metagenomics/strainest/example/reads.tar.gz
     tar zxvf reads.tar.gz
 
-Now, the he raw reads should be quality trimmed (e.g. using sickle).
+Now, the raw reads should be quality trimmed (e.g. using sickle).
 
 .. code-block:: sh
 
@@ -107,8 +104,8 @@ ftp://ftp.fmach.it/metagenomics/strainest/ref/ (e.g. ``pacnes.tar.gz``):
     wget ftp://ftp.fmach.it/metagenomics/strainest/ref/pacnes.tar.gz
     tar zxvf pacnes.tar.gz
 
-The Bowtie2 database is available in the ``P_acnes/bowtie`` directory. Now we can
-align the metagenome against the database:
+The Bowtie2 database is available in the ``P_acnes/bowtie`` directory. At this
+point we can align the metagenome against the database:
 
 .. code-block:: sh
 
@@ -129,7 +126,7 @@ Finally, the ``strainest est`` command predicts the strain abundances:
 
     strainest est P_acnes/snp_clust.dgrp reads.sorted.bam outputdir
 
-In the output directory we can find:
+In the output directory we can find::
 
     abund.txt
         The predicted abundances for each reference genome
