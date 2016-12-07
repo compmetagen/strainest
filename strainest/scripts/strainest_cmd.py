@@ -146,7 +146,7 @@ def snpclust(snp, dist, snpout, clust, thr):
               "coverage is lower than the MIN_DEPTH_ABSOLUTE")
 @click.option('-b', '--min-depth-base', type=click.FLOAT, default=0.01,
               show_default=True, help="filter base counts (set to 0) where "
-              "they are lower then MIN_DEPTH_BASE x DoC (applied independently 
+              "they are lower then MIN_DEPTH_BASE x DoC (applied independently "
               "for each allelic position)")
 @click.option('-d', '--max-ident-thr', type=click.FLOAT, default=0.95,
               show_default=True, help="discard genomes with less than "

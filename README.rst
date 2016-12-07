@@ -71,7 +71,8 @@ installation:
 .. code-block:: sh
 
    tar -zxvf strainest-X.Y.Z.tar.gz
-   sudo python setup.py install
+   cd strainest-X.Y.Z
+   python setup.py install
 
 
 Predict strain profiles
@@ -79,9 +80,9 @@ Predict strain profiles
 
 .. note::
 
-    This tutorial requires sickle (https://github.com/najoshi/sickle) and Bowtie2
-    (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) to be installed in 
-    your system.
+    This tutorial requires sickle (https://github.com/najoshi/sickle), Bowtie2
+    (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) and samtools
+    (http://samtools.sourceforge.net/) to be installed in your system.
 
 Download the example data (Illumina paired-end reads):
 
