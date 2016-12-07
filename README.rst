@@ -127,7 +127,7 @@ Finally, the ``strainest est`` command predicts the strain abundances:
 
 .. code-block:: sh
 
-    strainest est snp_clust.dgrp reads.sorted.bam outputdir
+    strainest est P_acnes/snp_clust.dgrp reads.sorted.bam outputdir
 
 In the output directory we can find:
 
