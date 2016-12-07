@@ -1,0 +1,10 @@
+*.[oa]
+*.pyc
+*~
+.vscode
+.DS_Store
+build/
+dist/
+MANIFEST
+.#*
+strainest.egg-info/

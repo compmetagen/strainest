@@ -1,0 +1,3 @@
+graft strainest/MUMmer323
+include README.rst
+global-exclude .DS_Store *.pyc .vscode
