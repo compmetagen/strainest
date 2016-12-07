@@ -126,23 +126,23 @@ Finally, the ``strainest est`` command predicts the strain abundances:
 
     strainest est P_acnes/snp_clust.dgrp reads.sorted.bam outputdir
 
-In the output directory we can find::
+In the output directory we can find:
 
-    abund.txt
-        The predicted abundances for each reference genome
+abund.txt
+    The predicted abundances for each reference genome
 
-    max_ident.txt
-        For each reference genome, the percentage of alleles that are present in
-        the metagenome
+max_ident.txt
+    For each reference genome, the percentage of alleles that are present in
+    the metagenome
 
-    info.txt
-        Information about the prediction, including the prediction Pearson R
+info.txt
+    Information about the prediction, including the prediction Pearson R
 
-    counts.txt
-        Number of counts for each SNV position/base pairs
+counts.txt
+    Number of counts for each SNV position/base pairs
 
-    mse.pdf
-        Lasso cross-validation plot as a function of the shrinkage coefficient
+mse.pdf
+    Lasso cross-validation plot as a function of the shrinkage coefficient
 
 
 (Optional) Build a custom reference SNV profile
