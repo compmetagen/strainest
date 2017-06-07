@@ -26,7 +26,9 @@ import numpy as np
 import scipy as sp
 from scipy import sparse
 import pandas as pd
-from sklearn.cross_validation import ShuffleSplit
+with warnings.catch_warnings():
+    warnings.filterwarnings("ignore", category=DeprecationWarning)
+    from sklearn.cross_validation import ShuffleSplit
 from sklearn.linear_model import Lasso, LassoCV
 from scipy.stats import pearsonr
 import matplotlib.pyplot as plt

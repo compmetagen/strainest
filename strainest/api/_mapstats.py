@@ -20,6 +20,9 @@ from __future__ import division
 import os
 import os.path
 
+import matplotlib as mpl
+mpl.use('Agg')
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
