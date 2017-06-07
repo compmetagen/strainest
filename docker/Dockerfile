@@ -19,9 +19,10 @@ RUN apt-get update && apt-get install -y \
     git \
     libblas-dev \
     liblapack-dev \
-    libfreetype6 \
-    libfreetype6-dev \
+    libfreetype6 libfreetype6-dev \
     libpng-dev \
+    liblzma-dev \
+    libbz2-dev \
     zlib1g \
     zlib1g-dev \
   && pip install --upgrade pip \
