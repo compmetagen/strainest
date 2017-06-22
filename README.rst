@@ -12,31 +12,31 @@ The easiest way to run StrainEst is through `Docker <https://www.docker.com/>`_.
 Docker works similarly to a virtual machine image, providing a container in
 which all the software has already been installed, configured and tested.
 
-#. Install Docker for `Linux <https://docs.docker.com/linux/>`_,
-    `Mac OS X <https://docs.docker.com/mac/>`_ or
-    `Windows <https://docs.docker.com/windows/>`_.
+#. Install Docker for `Linux <https://docs.docker.com/linux/>`_, 
+   `Mac OS X <https://docs.docker.com/mac/>`_ or 
+   `Windows <https://docs.docker.com/windows/>`_.
 
 #. Download the latest version of StrainEst:
 
-    .. code-block:: sh
+   .. code-block:: sh
 
         docker pull compmetagen/strainest
 
 #. Run an instance of the image, mounting the host working directory
-    (e.g. ``/Users/davide/strainest``) on to the container working directory
-    ``/strainest``:
+   (e.g. ``/Users/davide/strainest``) on to the container working directory
+   ``/strainest``:
 
-    .. code-block:: sh
+   .. code-block:: sh
 
         docker run --rm -t -i -v /Users/davide/strainest:/strainest -w /strainest compmetagen/strainest /bin/bash
 
-    You need to write something like ``-v //c/Users/davide/strainest:/strainest`` if
-    you are in Windows or ``-v /home/davide/micca:/micca`` in Linux. The
-    ``--rm`` option automatically removes the container when it exits.
+   You need to write something like ``-v //c/Users/davide/strainest:/strainest`` if
+   you are in Windows or ``-v /home/davide/micca:/micca`` in Linux. The
+   ``--rm`` option automatically removes the container when it exits.
 
 #. Now you can use strainest:
 
-    .. code-block:: sh
+   .. code-block:: sh
 
         root@68f6784e1101:/micca# strainest --help
 
