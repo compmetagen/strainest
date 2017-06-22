@@ -40,7 +40,7 @@ which all the software has already been installed, configured and tested.
 
         root@68f6784e1101:/micca# strainest --help
 
-Sickle and Bowtie2 are preinstalled in the Docker image.
+Sickle, Bowtie2 and samtools are preinstalled in the Docker image.
 
 
 Install from sources on Ubuntu >= 12.04 and Debian >=7
