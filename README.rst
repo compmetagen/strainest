@@ -160,4 +160,4 @@ mse.pdf
 
 (Optional) Build a custom reference SNV profile
 -----------------------------------------------
-See the Online Methods in the paper.
+See the Methods section of the paper.
