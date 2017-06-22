@@ -2,7 +2,7 @@
 
 StrainEst is a reference-based method that leverages on the accumulated knowledge of the genomic variability of species of interests to identify individual strains and quantify their relative abundances in mixed metagenomic samples.
 
-Sickle and Bowtie2 are preinstalled.
+Sickle, Bowtie2 and samtools are preinstalled.
 
 Homepage: https://github.com/compmetagen/strainest
 
@@ -30,4 +30,4 @@ Homepage: https://github.com/compmetagen/strainest
 
 3. Run micca without parameters:
 
-   `root@68f6784e1101:/strainest# strainest`
+   `root@68f6784e1101:/strainest# strainest --help`
