@@ -259,3 +259,10 @@ def est(snp_fn, bam_fn, output_dir, quality_thr=20, min_depth_percentile=10,
     info["R"], info["PVal"] = pearsonr(y, y_pred)
 
     write_abund_info()
+
+    if (np.max(coef_norm) < 0.9) and (max_ident_thr < 0.99):
+        sys.stdout.write("WARNING: the maximum identity threshold is <0.99 and "
+                         "StrainEst has inferred a mixture of strains. The "
+                         "mixture of strains could be a single strain with no "
+                         "available reference genome. Please check the file "
+                         "counts.txt.")
