@@ -9,7 +9,8 @@ Homepage: https://github.com/compmetagen/strainest
 ## Available Tags/Versions
 
 - latest: GitHub snapshot (master)
-- 1.2.1: strainest 1.2.1 
+- 1.2.2: strainest 1.2.2
+- 1.2.1: strainest 1.2.1
 
 
 ## Quickstart
