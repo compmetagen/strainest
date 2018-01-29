@@ -28,7 +28,9 @@ RUN apt-get update && apt-get install -y \
   && pip install --upgrade pip \
   && pip install 'Click>=5.1' 'pandas' 'pysam>=0.9' 'scikit-learn>=0.16.1,<0.20' 'biopython>=1.50' \
   && git clone https://github.com/compmetagen/strainest.git /tmp/strainest/ \
-  && pip install /tmp/strainest/ \
+  && cd /tmp/strainest/ \
+  && python setup.py install \
+  && cd \
   && rm -rf /var/lib/apt/lists/* /tmp/strainest
 
 # Install sickle
