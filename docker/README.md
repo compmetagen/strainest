@@ -23,7 +23,7 @@ Homepage: https://github.com/compmetagen/strainest
    (e.g. ``/Users/davide/strainest``) on to the container working directory
    ``/strainest``:
 
-   `docker run --rm -t -i -v /Users/davide/strainest:/strainest -w /strainest compmetagen/micca /bin/bash`
+   `docker run --rm -t -i -v /Users/davide/strainest:/strainest -w /strainest compmetagen/strainest /bin/bash`
 
    You need to write something like ``-v //c/Users/davide/strainest:/strainest`` if
    you are in Windows or ``-v /home/davide/strainest:/strainest`` in Linux. The
