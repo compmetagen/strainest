@@ -68,12 +68,12 @@ def mapgenome(genome_fn, reference_fn, delta_prefix):
                                     stderr=subprocess.PIPE)
             _, out_stderr = proc.communicate()
 
-            if proc.returncode:
-                if out_stderr.startswith(NO_ALIGN_STR):
-                    os.remove(align_fn)
-                    continue
-                else:
-                    raise Exception(out_stderr)
+        if proc.returncode:
+            if out_stderr.startswith(NO_ALIGN_STR):
+                os.remove(align_fn)
+                continue
+            else:
+                raise Exception(out_stderr)
 
         # load alignments
         with open(align_fn, 'rb') as align_handler:
