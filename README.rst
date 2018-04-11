@@ -72,7 +72,7 @@ Then, upgrade pip and install the following packages:
 .. code-block:: sh
 
     sudo pip install --upgrade pip
-    pip install 'Click>=5.1' 'pandas' 'pysam>=0.9' 'scikit-learn>=0.16.1,<0.20' 'biopython>=1.50'
+    pip install 'Click>=5.1' 'pandas' 'pysam>=0.12' 'scikit-learn>=0.16.1,<0.20' 'biopython>=1.50'
 
 Download the latest version from
 https://github.com/compmetagen/strainest/releases and complete the
