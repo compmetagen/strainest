@@ -43,7 +43,7 @@ def get_counts(samfile, positions, quality_threshold=15):
     for i, position in enumerate(positions):
         for reference in samfile.references:
             ref_count = samfile.count_coverage(
-                reference=reference, start=position-1, end=position,
+                contig=reference, start=position-1, end=position,
                 quality_threshold=quality_threshold)
             counts[:, i] += np.asarray(ref_count, dtype=np.int64).flatten()
     return counts
