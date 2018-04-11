@@ -48,7 +48,7 @@ setup(
         'numpy>=1.7.0',
         'scipy',
         'pandas',
-        'pysam>=0.9',
+        'pysam>=0.12',
         'scikit-learn>=0.16.1',
         'matplotlib>=1.3.0',
         'biopython>=1.50'],
