@@ -1,6 +1,6 @@
 import os
 
-__version__ = "1.2.2"
+__version__ = "1.2.4"
 
 def mummer_path():
     return os.path.join(os.path.dirname(__file__), "MUMmer323")

@@ -43,7 +43,7 @@ def get_counts(samfile, positions, quality_threshold=15):
     for i, position in enumerate(positions):
         for reference in samfile.references:
             ref_count = samfile.count_coverage(
-                contig=reference, start=position-1, end=position,
+                contig=reference, start=position-1, stop=position,
                 quality_threshold=quality_threshold)
             counts[:, i] += np.asarray(ref_count, dtype=np.int64).flatten()
     return counts
@@ -265,4 +265,4 @@ def est(snp_fn, bam_fn, output_dir, quality_thr=20, min_depth_percentile=10,
                          "StrainEst has inferred a mixture of strains. The "
                          "mixture of strains could be a single strain with no "
                          "available reference genome. Please check the file "
-                         "counts.txt.")
+                         "counts.txt.\n")

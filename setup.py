@@ -32,7 +32,7 @@ class custom_install(install):
 
 setup(
     name='strainest',
-    version = '1.2.2',
+    version = '1.2.4',
     packages = find_packages(),
     description='Abundance estimation of strains',
     long_description=open('README.rst').read(),
