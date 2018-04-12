@@ -29,7 +29,7 @@ from scipy import sparse
 import pandas as pd
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore", category=DeprecationWarning)
-    from sklearn.cross_validation import ShuffleSplit
+    from sklearn.model_selection import ShuffleSplit
 from sklearn.linear_model import Lasso, LassoCV
 from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
@@ -211,8 +211,7 @@ def est(snp_fn, bam_fn, output_dir, quality_thr=20, min_depth_percentile=10,
     y = freqs_flat
 
     # Tuning Lasso alpha (most parsimonious model)
-    cv = ShuffleSplit(X.shape[0], n_iter=CV_NITER, test_size=TEST_SIZE,
-                      random_state=0)
+    cv = ShuffleSplit(n_splits=CV_NITER, test_size=TEST_SIZE, random_state=0)
 
     lasso_cv = LassoCV(eps=0.001, n_alphas=NALPHA,
                        fit_intercept=False, normalize=False,
