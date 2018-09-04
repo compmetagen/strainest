@@ -160,4 +160,68 @@ mse.pdf
 
 (Optional) Build a custom reference SNV profile
 -----------------------------------------------
-See the Methods section of the paper.
+For a detailed description of the methods to build a custom reference database see the Methods section of the paper.
+
+Reference databases for a number of species are available at ftp://ftp.fmach.it/metagenomics/strainest/ref2/
+
+Each tar.gz archive contains the following files:
+
+assembly_list.txt
+     tab separated table containing a list of the sequences that we have used with basic info. The column “Rep” tells you if it is one of the representative strains and the column ClustID tells you in which cluster it is. 
+
+log.txt
+     basic info on the clustering procedure, i.e number of clusters, number of SNVs and % of core genome
+
+map_align.fasta
+     contains the reference sequences for read alignment. Use this file to build the bowtie or bwa database. For all species we used the default, i.e. 10 assemblies (if available)
+
+snv.txt
+     contains the snv matrix for the "strainest est” command.
+
+The list of species for which pre-built databases are available is given below, with the number of genomes used to build the database, the number of representative SNV profiles, the number of SNVs and the percentage of the reference genome that is common to all genomes (core)
+
++---------------------------------+------------+---------+---------+----------+
+|                          Species|# of genomes|# of repr|# of SNVs| % of core|
++=================================+============+=========+=========+==========+
+|                Bacteroides dorei|          13|       10|    35506|    46.580|
++---------------------------------+------------+---------+---------+----------+
+|            Bacteroides eggerthii|           4|        3|    24686|    70.537|
++---------------------------------+------------+---------+---------+----------+
+|             Bacteroides fragilis|         124|       49|   176883|    21.561|
++---------------------------------+------------+---------+---------+----------+
+|         Bacteroides intestinalis|           6|        4|   205290|    27.325|
++---------------------------------+------------+---------+---------+----------+
+|               Bacteroides ovatus|          17|       11|   220623|    46.294|
++---------------------------------+------------+---------+---------+----------+
+|     Bacteroides thetaiotaomicron|          17|       14|   370873|    49.412|
++---------------------------------+------------+---------+---------+----------+
+|            Bacteroides uniformis|          23|       16|    97560|    48.607|
++---------------------------------+------------+---------+---------+----------+
+|             Bacteroides vulgatus|          17|       16|    32365|    40.987|
++---------------------------------+------------+---------+---------+----------+
+|     Bifidobacterium adolescentis|          26|       24|    43230|    52.126|
++---------------------------------+------------+---------+---------+----------+
+|          Bifidobacterium bifidum|          36|       24|    41129|    61.021|
++---------------------------------+------------+---------+---------+----------+
+|      Bifidobacterium catenulatum|           5|        2|    25621|    83.984|
++---------------------------------+------------+---------+---------+----------+
+|           Bifidobacterium longum|         114|       84|    76932|    34.662|
++---------------------------------+------------+---------+---------+----------+
+|Bifidobacterium pseudocatenulatum|          17|       13|    74842|    66.678|
++---------------------------------+------------+---------+---------+----------+
+|      Clostridium clostridioforme|          16|        9|   233709|    43.286|
++---------------------------------+------------+---------+---------+----------+
+|          Collinsella aerofaciens|           5|        5|   184750|    66.271|
++---------------------------------+------------+---------+---------+----------+
+|                Dorea longicatena|          12|        9|   104873|    32.200|
++---------------------------------+------------+---------+---------+----------+
+|                 Escherichia coli|       10321|      433|   124403|    10.071|
++---------------------------------+------------+---------+---------+----------+
+|              Eubacterium siraeum|           5|        4|    90669|    75.687|
++---------------------------------+------------+---------+---------+----------+
+|       Parabacteroides distasonis|          17|       11|   117483|    58.044|
++---------------------------------+------------+---------+---------+----------+
+|       Staphylococcus epidermidis|         512|       85|    34349|    19.165|
++---------------------------------+------------+---------+---------+----------+
+|         Streptococcus salivarius|          45|       32|   246121|    58.651|
++---------------------------------+------------+---------+---------+----------+
