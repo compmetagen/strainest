@@ -3,13 +3,14 @@ CWL implementation of the StrainEst pipeline
 
 Usage:
 
-.. code-block:: sh
-    cwltool ~/path-to-workflow/strainest.cwl --reference_dir reference_dir \
-    --reference_basename reference_basename \
-    --bowtie2_read1 bowtie2_read1 \
-    --bowtie2_read2 bowtie2_read2 \
-    ---snv snv  \
-    --strainest_est_output_dir_name strainest_est_output_dir_name
+  .. code-block:: sh
+  
+        cwl-runner ~/path-to-workflow/strainest.cwl --reference_dir reference_dir \
+        --reference_basename reference_basename \
+        --bowtie2_read1 bowtie2_read1 \
+        --bowtie2_read2 bowtie2_read2 \
+        ---snv snv  \
+        --strainest_est_output_dir_name strainest_est_output_dir_name
 
 where:
 "reference_dir" is the directory where the bowtie2-indexed reference database is located;
