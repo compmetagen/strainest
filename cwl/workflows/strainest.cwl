@@ -12,6 +12,7 @@ inputs:
     'sbg:y': -361
   - id: reference_basename
     type: string
+    doc: bowtie indexed database basename
     'sbg:x': -931.6915893554688
     'sbg:y': -252.3832244873047
   - id: bowtie2_read2
@@ -24,10 +25,12 @@ inputs:
     'sbg:y': 51
   - id: strainest_est_dgrp
     type: File
+    doc: SNV file
     'sbg:x': -353
     'sbg:y': -287
   - id: strainest_est_output_dir_name
     type: string
+    doc: Output directory
     'sbg:x': -170.3577117919922
     'sbg:y': -409.4101257324219
 outputs:
@@ -46,7 +49,7 @@ steps:
         default: reads.bam
     out:
       - id: output
-    run: ../Tools/samtools-view.cwl
+    run: ../tools/samtools-view.cwl
     label: samtools-view
     'sbg:x': -579
     'sbg:y': 68
@@ -58,7 +61,7 @@ steps:
         default: reads.sorted.bam
     out:
       - id: output
-    run: ../Tools/samtools-sort.cwl
+    run: ../tools/samtools-sort.cwl
     label: samtools-sort
     'sbg:x': -498
     'sbg:y': -170
@@ -68,7 +71,7 @@ steps:
         source: samtools_sort/output
     out:
       - id: output
-    run: ../Tools/samtools-index.cwl
+    run: ../tools/samtools-index.cwl
     label: samtools-index
     'sbg:x': -377
     'sbg:y': 25
@@ -86,7 +89,7 @@ steps:
         source: reference_basename
     out:
       - id: output
-    run: ../Tools/bowtie2.cwl
+    run: ../tools/bowtie2.cwl
     label: bowtie2
     'sbg:x': -703.40625
     'sbg:y': -129
@@ -100,7 +103,7 @@ steps:
         source: strainest_est_output_dir_name
     out:
       - id: strainest_est_output_dir
-    run: ../Tools/strainest-est.cwl
+    run: ../tools/strainest-est.cwl
     label: Strainest-est
     'sbg:x': -145
     'sbg:y': -39
