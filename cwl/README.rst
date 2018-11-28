@@ -23,5 +23,5 @@ where:
 
 "snv" is the reference SNV file
 
-"strainest_est_output_dir_name" is the name of the output directory
+"strainest_est_output_dir_name" is the name of the output directory;
 
