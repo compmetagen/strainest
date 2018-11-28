@@ -1,2 +1,21 @@
 CWL implementation of the StrainEst pipeline
 ============================================
+
+Usage:
+
+.. code-block:: sh
+    cwltool ~/path-to-workflow/strainest.cwl --reference_dir reference_dir \
+    --reference_basename reference_basename \
+    --bowtie2_read1 bowtie2_read1 \
+    --bowtie2_read2 bowtie2_read2 \
+    ---snv snv  \
+    --strainest_est_output_dir_name strainest_est_output_dir_name
+
+where:
+"reference_dir" is the directory where the bowtie2-indexed reference database is located;
+"reference_basename" is the basename of the bowtie2-indexed database;
+"bowtie2_read1" is the forward read file in fastq or fastq.gz format
+"bowtie2_read2" is the reverse read file in fastq or fastq.gz format
+"snv" is the reference SNV file
+"strainest_est_output_dir_name" is the name of the output directory
+
