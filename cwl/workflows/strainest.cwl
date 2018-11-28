@@ -23,7 +23,7 @@ inputs:
     type: File
     'sbg:x': -771.4100341796875
     'sbg:y': 51
-  - id: strainest_est_dgrp
+  - id: snv
     type: File
     doc: SNV file
     'sbg:x': -353
@@ -96,7 +96,7 @@ steps:
   - id: strainest_est
     in:
       - id: strainest_est_dgrp
-        source: strainest_est_dgrp
+        source: snv
       - id: strainest_est_bam
         source: samtools_index/output
       - id: strainest_est_output_dir_name
