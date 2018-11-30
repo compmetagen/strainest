@@ -1,6 +1,6 @@
 CWL implementation of the StrainEst pipeline
 ============================================
-We have implemented a basic version of the strainest pipeline using the 
+We have implemented a basic version of the StrainEst pipeline using the 
 Common Workflow Language standard (https://www.commonwl.org/)
 
 Usage:
