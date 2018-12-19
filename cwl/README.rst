@@ -1,7 +1,7 @@
 CWL implementation of the StrainEst pipeline
 ============================================
 We have implemented a basic version of the StrainEst pipeline using the 
-`Common Workflow Language standard <https://www.commonwl.org/>`_
+`Common Workflow Language <https://www.commonwl.org/>`_ standard 
 
 #. Install Docker for `Linux <https://docs.docker.com/linux/>`_, 
    `Mac OS X <https://docs.docker.com/mac/>`_ or 
