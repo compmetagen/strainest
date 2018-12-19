@@ -12,7 +12,7 @@ inputs:
       position: 3
       prefix: '-1'
   - id: bowtie2_read2
-    type: File
+    type: File?
     inputBinding:
       position: 4
       prefix: '-2'
