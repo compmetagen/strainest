@@ -27,3 +27,8 @@ where:
 
 "strainest_est_output_dir_name" is the name of the output directory.
 
+The CWL implementation of the pipeline performs the following steps: 
+i) alignment of metagenomic reads on the reference database suing bowtie2; 
+ii) conversion of the sam file into bam, sorting and indexing;
+iii) estimation of the relative abundace of strains using the "strainest est" 
+subcommand.
