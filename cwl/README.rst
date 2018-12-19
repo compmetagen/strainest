@@ -27,8 +27,21 @@ where:
 
 "strainest_est_output_dir_name" is the name of the output directory.
 
+Requirements:
+i) an installation of docker on the local machine;
+ii) a working internet connection;
+
 The CWL implementation of the pipeline performs the following steps: 
 i) alignment of metagenomic reads on the reference database suing bowtie2; 
 ii) conversion of the sam file into bam, sorting and indexing;
 iii) estimation of the relative abundace of strains using the "strainest est" 
-subcommand.
+subcommand. The containerized version of the software is automatically downloaded
+from the compmetagen repository on Docker Hub and run locally. For this reason, a
+working internet connection and a running installation of docker is needed.
+The strainest.cwl workflow uses relative paths to locate the paths for the individual 
+tools, and assumes that they are located in a directory "../tools" from the 
+path where it is located. If you want to move it around, build a self contained 
+version the command "cwltool --pack strainest.cwl > strainest-pack.cwl".
+
+For details of how to run a CWL pipeline and on the CWL implementations on the 
+different platforms, please see https://www.commonwl.org/ 
