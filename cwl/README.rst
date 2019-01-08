@@ -34,7 +34,9 @@ where:
 "strainest_est_output_dir_name" is the name of the output directory.
 
 Requirements:
+
 #. an installation of docker on the local machine;
+
 #. a working internet connection;
 
 The CWL implementation of the pipeline performs the following steps: 
