@@ -34,8 +34,8 @@ where:
 "strainest_est_output_dir_name" is the name of the output directory.
 
 Requirements:
-i) an installation of docker on the local machine;
-ii) a working internet connection;
+#. an installation of docker on the local machine;
+#. a working internet connection;
 
 The CWL implementation of the pipeline performs the following steps: 
 i) alignment of metagenomic reads on the reference database suing bowtie2; 
