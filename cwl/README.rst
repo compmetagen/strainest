@@ -48,7 +48,7 @@ The CWL implementation of the pipeline performs the following steps:
 #. estimation of the relative abundace of strains using the "strainest est"  subcommand. 
 
 The workflow assumes that the bowtie2-indexed referece database exists, with 
-basename ""reference_basename" and located in the "reference_dir" diectory. 
+basename ""reference_basename" and located in the "reference_dir" directory. 
 
 The containerized version of the software is 
 automatically downloaded
