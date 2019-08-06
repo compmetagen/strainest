@@ -18,7 +18,7 @@ Usage:
         --bowtie2_read1 bowtie2_read1 \
         --bowtie2_read2 bowtie2_read2 \
         ---snv snv  \
-        --strainest_est_output_dir_name strainest_est_output_dir_name
+        --strainest_est_output_dir strainest_est_output_dir_name
 
 where:
 "reference_dir" is the directory where the bowtie2-indexed reference database is located;
